@@ -88,8 +88,8 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/items"); // Replace with your JSON server endpoint
-        setMenuItem(response.data);
+        const response = await axios.get("data/items.json"); // Replace with your JSON server endpoint
+        setMenuItem(response.data.items);
         console.log(response.data);
       } catch (error) {
         setError;
