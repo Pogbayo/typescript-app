@@ -1,0 +1,32 @@
+.modal {
+display: none;
+  position: fixed;
+   top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Blur background */
+  z-index: 999;
+  overflow-y: auto;
+  display: flex; /* Center content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  }
+  .modal.open {
+  display: flex;
+  }
+  .modal-content {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  } 
+  
+  .startNewOrder{
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: orangered;
+    color: white;
+    margin-left: 50px;
+  }

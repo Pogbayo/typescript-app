@@ -1,0 +1,219 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.903);
+  background-color: #fbf7f7e5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuPrice{
+  margin-bottom: 11px;
+}
+.count{
+  font-size: 1.5rem;
+  margin: 5px;
+}
+*{
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+.x-men{
+  background-color: #ff4500;
+}
+.itemBox{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 280px 280px 280px;
+  margin: 20px;
+  padding: 10px;
+ 
+}
+main{
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+  margin: 8px;
+  font-size: larger;
+}
+.grid-item{
+
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
+  align-items: center; /* Add this */
+  border-radius: 20px;
+}
+.lower{
+  margin-top: 20px;
+}
+b{
+  font-size: 2rem;
+}
+.cartHeader{
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+.cartPage {
+  margin: 20px;
+  padding: 20px;
+  height: 60%;
+  width: 30%; /* Adjust width as needed */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  background-color: #f5f5f5; /* Light gray background */
+  border-radius: 10px;
+  display: list-item;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.neh{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.n{
+  margin: 5px;
+  height: 35px;
+  width:30px;
+}
+.cartItem{
+  width: 100%;
+}
+.dollarSign{
+  padding-right: 10px;
+}
+
+.spanBoys{
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 5px; 
+}
+.itemBox > div > img.img {
+  width: 200px; /* Adjust as needed */
+  margin: 10px;
+  height: 140px; /* Adjust as needed */
+  border-radius: 10px;
+  outline: #ff4500;
+}
+.diva{
+  display: flex; /* Make items display in a row */
+  justify-content: space-between; /* Distribute content evenly */
+  align-items: center; /* Align vertically */
+  padding: 10px; /* Add some padding for readability */
+  border-bottom: 1px solid #ddd; /* Light border to separate items */
+  margin-bottom: 10px; /* Add some space between items */
+  width:75%; /* Make each cart item fill the full width */
+  background-color: #fff; /* White background for better contrast */
+  border-radius: 5px;
+}
+.btn{
+  border-radius: 7px;
+  width: 50%;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff4500;
+  color: white;
+}
+
+.orderBoys{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.placeOrderBtn{
+  width: 90%;
+  border-radius: 30px;
+  color: white;
+  height: 40px;
+  margin-left: 15px;
+  background-color: olivedrab;
+  border: 2px solid black;
+}
+.plus{
+  background-color: rgb(149, 231, 149);
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+}
+.minus{
+  background-color: rgb(226, 128, 128);
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+}
+.confirmedOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 5px outset grey;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(63, 50, 50, 0.1); /* Subtle shadow for depth */
+  background-color: whitesmoke;
+}
+.confirmedOrder div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: antiquewhite;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 15px;
+}
+.dollie{
+  font-size: 2rem;
+  font-weight: 900;
+}
+.confirmedOrder div p {
+  margin: 0;
+  
+  font-size: 14px;
+}
+
+.confirmedOrder div p:first-child {
+  font-weight: bold; /* Emphasize product name */
+  
+}
+.details{
+  margin-bottom: 10px;
+}
+.confirmedOrder div p:last-child {
+  color: #333; /* Darker color for price */
+  margin: 10px;
+}
+.client{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.semiIcon{
+font-size: 2rem;
+}
+/* ... existing CSS styles */
+
+@media (max-width: 768px) {
+  .itemBox {
+    grid-template-columns: 1fr; /* Stack items vertically */
+  }
+
+  
+}
